@@ -1,0 +1,144 @@
+/*main*/
+main{
+    padding: 0 72px;
+}
+/*trending*/
+.trending{
+    padding: 40px 0;
+    row-gap: 40px;
+}
+.trending .head .title{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.trending .head .paragraph{
+    font-size: 16px;
+}
+.trending .cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    column-gap: 30px;
+}
+.trending .cards .card:nth-child(3) {
+    display: none;
+}
+/*---------------BrowsCategories----------------*/
+.BrowsCategories{
+    padding: 40px 0;
+    row-gap: 40px;
+}
+.BrowsCategories .categories .category{
+    max-width: 140px;
+}
+.BrowsCategories .categories .category .picture{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.BrowsCategories .categories .category .picture img{
+    width:140px !important;
+}
+.BrowsCategories .categories .category .picture svg{
+    width: 65px;
+    height: 65px;
+}
+.BrowsCategories .categories .category .subTitle{
+    padding: 20px 20px 25px 20px;
+    font-size: 16px;
+}
+/*-------------------------work------------------------*/
+.work {
+    margin-top: 690px;
+    padding: 40px 0;
+    row-gap: 40px;
+}
+.work .workInfo .title{
+    font-size: 28px;
+}
+.work .workInfo .paragraph{
+    font-size: 16px;
+}
+.work .cards .card{
+    display: flex;
+    width: 100%;
+    padding: 10px 20px 30px 20px;
+}
+.work .cards .card .description .subtitle{
+    font-size: 16px;
+}
+.work .cards .card .description .information{
+    font-size: 12px;
+}
+/*---------------subscribe------------------------*/
+.subscribe .widgetCard{
+    padding: 40px 30px;
+    column-gap: 30px;
+    align-items: start;
+    justify-content: start;
+}
+.subscribe .widgetCard .picture{
+    width: 300px;
+}
+.subscribe .widgetCard .widgetInfo{
+    gap: 25px;
+}
+.subscribe .widgetCard .widgetInfo .description{
+    width: 100%;
+}
+.subscribe .widgetCard .widgetInfo .links{
+    width: 100%;
+    flex-flow: column nowrap;
+    gap: 16px;
+    background: none;
+    align-items: start;
+    justify-content: start;
+    padding:0;
+}
+.subscribe .widgetCard .widgetInfo .links .leftLink{
+    display: flex;
+    height: 46px;
+    padding: 16px 20px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 1px solid var(--caption-label-text, #858584);
+    background: var(--Text, #FFF);
+}
+.subscribe .widgetCard .widgetInfo .links .rightLink{
+    width: 100%;
+    height: 46px;
+    justify-content: center;
+}
+.subscribe .widgetCard .widgetInfo .links .rightLink svg{
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+/*-------------------------footer--------------------------*/
+footer{
+    padding: 40px 72px;
+    align-items:start ;
+    justify-content: start;
+}
+footer .container{
+    padding:0 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:repeat(3,auto) ;
+    row-gap: 30px;
+}
+footer .container .marketplace{
+    width: 100%;
+}
+footer .container .marketplace .paragraph{
+    width: 100%;
+}
+footer .container .subscribe_f .subInfo .paragraph{
+    width:100% ;
+}
+footer .subtitle{
+    padding:0;
+}

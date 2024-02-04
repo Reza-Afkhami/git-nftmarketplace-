@@ -1,0 +1,323 @@
+header {
+    padding: 15px 30px;
+}
+
+/*main*/
+main {
+    padding: 0 30px;
+}
+
+/*hero*/
+.hero {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 40px;
+    grid-template-areas:
+    'title  title'
+    'paragraph paragraph'
+    'NFT_picture NFT_picture'
+    'link link'
+    'statics statics';
+    justify-items: center;
+}
+
+.hero .title {
+    width: 100%;
+    font-size: 38px;
+}
+
+.hero .paragraph {
+    width: 100%;
+    font-size: 16px;
+}
+
+.hero .link {
+    justify-self: center;
+    width: 100%;
+}
+
+.hero .statics .static .number {
+    font-size: 22px;
+}
+
+.hero .statics .static .staticTitle {
+    font-size: 16px;
+}
+
+.hero .NFT_picture {
+    width: 100%;
+}
+
+.hero .NFT_picture .picture {
+    max-width: 100%;
+}
+
+/*trending*/
+.trending {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    place-content: start;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.trending .title {
+    width: 100%;
+    place-content: end;
+}
+
+.trending .paragraph {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    place-content: end;
+}
+
+.trending .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    place-items: start;
+    place-content: start;
+}
+.trending .cards .card{
+    width: 100%;
+}
+.trending .cards .card .top{
+    width: 100%;
+}
+.trending .cards .card .top .mainImage{
+    width: 100%;
+}
+.trending .cards .card .top .mainImage img{
+    width: 100%;
+}
+.trending .cards .card:nth-child(2) {
+    display: none;
+}
+
+/*TopCreators*/
+.TopCreators {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+            'title'
+            'paragraph'
+            'creators'
+            'link';
+}
+
+.TopCreators .title {
+    display: block;
+}
+
+.TopCreators .paragraph {
+    display: block;
+}
+
+.TopCreators .head .link{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    text-align: left !important;
+    position: absolute;
+    bottom: 0;
+}
+.TopCreators .link svg{
+    justify-self: end;
+}
+.creators {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    row-gap: 20px;
+    margin-bottom: 40px;
+}
+.creators .creator:nth-of-type(6){
+    display: none;
+}
+/*------------------categories------------------------*/
+.BrowsCategories .categories{
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(4,auto);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.BrowsCategories .categoryTitle{
+    font-size: 28px;
+}
+/*---------------------discovery-------------------------*/
+
+.discover .cards .card:nth-of-type(3){
+    display: grid;
+}
+.discover {
+    padding: 40px 0 100px 0;
+    position: relative;
+    row-gap: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    justify-items: start;
+    grid-template-areas:
+            'title'
+            'paragraph'
+            'cards'
+            'link';
+}
+
+.discover .top .title{
+    font-size: 28px;
+    grid-area: title;
+    align-self: center;
+    justify-self: start;
+}
+.discover .top .paragraph{
+    font-size: 16px;
+    grid-area: paragraph;
+}
+.discover .top .link{
+    grid-area: link;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    text-align: left !important;
+    position: absolute;
+    bottom: -10%;
+    transform: translateY(90%);
+}
+.discover .cards{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+    row-gap: 20px;
+    grid-area: cards;
+}
+/*--------------------NFT-Highlight--------------------------*/
+.NFT_Highlight{
+    padding: 120px 30px 40px 30px;
+}
+.NFT_Highlight .nft-info{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+    row-gap: 30px;
+    grid-template-areas: none;
+    justify-items: center;
+}
+.NFT_Highlight .nft-info .nft-info-left{
+    width: 100%;
+}
+.NFT_Highlight .nft-info .nft-info-left .topLink{
+
+}
+.NFT_Highlight .nft-info .nft-info-left .title{
+    width: 100%;
+}
+.NFT_Highlight .nft-info .nft-info-left .bottomLink{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.NFT_Highlight .nft-info .nft-info-right{
+    width: 100%;
+}
+/*----------------------work-----------------------*/
+.work .cards {
+    grid-template-columns: auto ;
+    grid-template-rows:repeat(3,auto);
+    row-gap: 20px;
+    width: 100%;
+}
+.work .cards .card{
+    display: flex;
+    width: 100%;
+    padding:20px;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.work .cards .card .workPicture{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+.work .cards .card .workPicture img{
+    width: 100%;
+    height: 80%;
+}
+.work .cards .card .description{
+    justify-content: start;
+    align-items: start;
+}
+.work .cards .card .description .information{
+    text-align: start;
+}
+/*subscribe*/
+.subscribe{
+    padding: 40px 0 60px 0;
+}
+.subscribe .widgetCard{
+    background: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns:auto ;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 30px;
+}
+.subscribe .widgetCard .picture{
+    width: 100%;
+}
+/*---------------------------footer--------------*/
+footer{
+    padding: 40px 30px;
+    gap: 30px;
+}
+footer .container .subscribe_f .subInfo .links{
+    width: 100%;
+    flex-flow: column nowrap;
+    gap: 16px;
+    background: none;
+    align-items: start;
+    justify-content: start;
+    padding:0;
+    margin-bottom: 40px;
+}
+footer .container .subscribe_f .subInfo .links .leftLink{
+    display: flex;
+    height: 46px;
+    padding: 16px 20px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 1px solid var(--caption-label-text, #858584);
+    background: var(--Text, #FFF);
+}
+footer .container .subscribe_f .subInfo .links .rightLink{
+    width: 100%;
+    height: 46px;
+    justify-content: center;
+}
+footer .container .subscribe_f .subInfo .links .rightLink svg{
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+footer .divider{
+    width: 90%;
+}

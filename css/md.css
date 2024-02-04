@@ -1,0 +1,229 @@
+/*header*/
+header{
+    padding: 15px 50px;
+}
+header .menu__nav {
+    display: none;
+}
+header .menu .openMenu{
+    display: block;
+    cursor: pointer;
+}
+/*main*/
+main{
+    padding: 0 72px;
+}
+/*hero*/
+.hero{
+    row-gap: 20px;
+}
+
+.hero .title{
+    width: 330px;
+    font-size: 38px;
+}
+.hero .paragraph{
+    width: 330px;
+    font-size: 16px;
+}
+.hero .NFT_picture{
+    width: 330px;
+}
+.hero .NFT_picture .picture{
+    max-width: 330px;
+}
+.hero .statics .static .number{
+    font-size: 22px;
+}
+.hero .statics .static .staticTitle{
+    font-size: 16px;
+}
+/*TopCreators*/
+.TopCreators{
+    padding: 40px 0;
+    row-gap: 40px;
+}
+.TopCreators .head .title{
+    font-size: 28px;
+}
+.TopCreators .head .paragraph{
+    font-size: 16px;
+}
+.creators{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+}
+.creators .creator{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-items: start;
+}
+.creators .creator:nth-of-type(7){
+    display: none;
+}
+.creators .creator:nth-of-type(8){
+    display: none;
+}
+.creators .creator:nth-of-type(9){
+    display: none;
+}
+.creators .creator:nth-of-type(10){
+    display: none;
+}
+.creators .creator:nth-of-type(11){
+    display: none;
+}
+.creators .creator:nth-of-type(12){
+    display: none;
+}
+.creators .creator .number{
+    left: 12px;
+    top: 13px;
+}
+.creators .creator .picture{
+    height: 60px;
+    aspect-ratio: 1/1;
+}
+.creators .creator .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.creators .creator .description{
+    justify-items: start;
+    column-gap: 5px;
+}
+/*---------------------discover--------------------------*/
+.discover{
+    padding: 40px 0 80px 0;
+    row-gap: 40px;
+}
+.discover .top .title{
+font-size: 39px;
+}
+.discover .top .paragraph{
+    font-size: 22px;
+}
+.discover .cards{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    column-gap: 30px;
+}
+.discover .cards .card:nth-of-type(3){
+    display: none;
+}
+/*--------------------NFT-Highlight--------------------------*/
+.NFT_Highlight{
+    background-image:linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%), url("/public/images/NFT-Highlight.png");
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: 100% 135%;
+    padding: 360px 82px 60px 82px;
+    height: 630px;
+    width: 100%;
+}
+.NFT_Highlight .nft-picture{
+    top: 0;
+    display: none;
+}
+.NFT_Highlight .nft-info{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.NFT_Highlight .nft-info .nft-info-left{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,max-content);
+    row-gap: 30px;
+    justify-items: start;
+}
+.NFT_Highlight .nft-info .nft-info-left .topLink{
+    height: 41px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #3B3B3B;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.NFT_Highlight .nft-info .nft-info-left .topLink .avatarDescription{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+.NFT_Highlight .nft-info .nft-info-left .title{
+    color: #FFF;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+}
+.NFT_Highlight .nft-info .nft-info-left .bottomLink{
+    border-radius: 20px;
+    background: var(--Text, #FFF);
+    display: flex;
+    height: 60px;
+    padding: 22px 50px;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+}
+.NFT_Highlight .nft-info .nft-info-right{
+    border-radius: 20px;
+    background: rgba(59, 59, 59, 0.50);
+    backdrop-filter: blur(5px);
+    width: 295px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 10px;
+}
+.NFT_Highlight .nft-info .nft-info-right .title{
+    color: var(--Text, #FFF);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+}
+.NFT_Highlight .nft-info .nft-info-right .clock{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: auto;
+    column-gap: 10px;
+}
+.NFT_Highlight .nft-info .nft-info-right .clock .colon{
+    color: var(--Text, #FFF);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+}
+.NFT_Highlight .nft-info .nft-info-right .clock .number{
+    color: var(--Text, #FFF);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+}
+.NFT_Highlight .nft-info .nft-info-right .clock .subtitle{
+    color: var(--Text, #FFF);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+}
+.NFT_Highlight .nft-info .nft-info-right .clock .time{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 5px;
+}
